@@ -8,6 +8,13 @@ document.querySelector('#app').innerHTML = `
   <section class="relative min-h-screen flex flex-col items-center justify-center px-6 bg-[#1C1C1C]">
     <!-- Gradient Overlay -->
     <div class="absolute inset-0 bg-gradient-to-tr from-[#E4572E]/20 via-transparent to-black"></div>
+    
+    <!-- Hero Background SVG -->
+    <div class="absolute inset-0 flex items-center justify-center opacity-10">
+      <img src="/python-silhouette.svg" alt="Python silhouette" 
+           class="max-w-2xl filter drop-shadow-[0_0_25px_rgba(228,87,46,0.7)]" />
+    </div>
+
     <div class="relative z-10 text-center" data-aos="fade-up" data-aos-duration="800">
       <h1 class="text-5xl md:text-7xl font-bold tracking-tight text-[#E4572E] drop-shadow-forge">
         herp<span class="text-white drop-shadow-forgeWhite">Forge</span>
@@ -113,7 +120,7 @@ document.querySelector('#app').innerHTML = `
   <!-- Footer -->
   <footer class="bg-[#1C1C1C] text-gray-500 py-6 text-center text-sm flex flex-col items-center space-y-2">
     <p>© 2025 herpForge. Built for breeders, by breeders.</p>
-    <p class="text-xs text-gray-600">v1.6.0</p>
+    <p class="text-xs text-gray-600">v1.6.2</p>
   </footer>
 `
 
