@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 320" width="220" height="320">
+  <!-- Left snake body (tapering path) -->
+  <path d="M70 40 C 110 80, 110 120, 70 160 C 30 200, 30 240, 70 280" 
+        stroke="#555" stroke-width="12" fill="none" stroke-linecap="round"/>
+  <!-- Left snake head -->
+  <ellipse cx="70" cy="30" rx="14" ry="10" fill="#666"/>
+  
+  <!-- Right snake body (tapering path) -->
+  <path d="M150 40 C 110 80, 110 120, 150 160 C 190 200, 190 240, 150 280" 
+        stroke="#444" stroke-width="12" fill="none" stroke-linecap="round"/>
+  <!-- Right snake head -->
+  <ellipse cx="150" cy="30" rx="14" ry="10" fill="#555"/>
+  
+  <!-- Inner taper (to suggest body narrowing) -->
+  <path d="M70 40 C 110 80, 110 120, 70 160 C 30 200, 30 240, 70 280" 
+        stroke="#777" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M150 40 C 110 80, 110 120, 150 160 C 190 200, 190 240, 150 280" 
+        stroke="#666" stroke-width="6" fill="none" stroke-linecap="round"/>
+  
+  <!-- DNA rungs -->
+  <line x1="70" y1="60" x2="150" y2="60" stroke="#888" stroke-width="2"/>
+  <line x1="70" y1="100" x2="150" y2="100" stroke="#888" stroke-width="2"/>
+  <line x1="70" y1="140" x2="150" y2="140" stroke="#888" stroke-width="2"/>
+  <line x1="70" y1="180" x2="150" y2="180" stroke="#888" stroke-width="2"/>
+  <line x1="70" y1="220" x2="150" y2="220" stroke="#888" stroke-width="2"/>
+  <line x1="70" y1="260" x2="150" y2="260" stroke="#888" stroke-width="2"/>
+  
+  <!-- Data nodes -->
+  <circle cx="70" cy="60" r="4" fill="#aaa"/>
+  <circle cx="150" cy="100" r="4" fill="#aaa"/>
+  <circle cx="70" cy="140" r="4" fill="#aaa"/>
+  <circle cx="150" cy="180" r="4" fill="#aaa"/>
+  <circle cx="70" cy="220" r="4" fill="#aaa"/>
+  <circle cx="150" cy="260" r="4" fill="#aaa"/>
+</svg>

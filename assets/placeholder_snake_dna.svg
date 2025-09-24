@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300" width="200" height="300">
+  <!-- Background helix-like curves (snake-inspired) -->
+  <path d="M60 20 C 100 60, 100 100, 60 140 C 20 180, 20 220, 60 260" 
+        stroke="#666" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <path d="M140 20 C 100 60, 100 100, 140 140 C 180 180, 180 220, 140 260" 
+        stroke="#444" stroke-width="8" fill="none" stroke-linecap="round"/>
+  
+  <!-- Rungs (like DNA ladder, subtle) -->
+  <line x1="60" y1="40" x2="140" y2="40" stroke="#888" stroke-width="2"/>
+  <line x1="60" y1="80" x2="140" y2="80" stroke="#888" stroke-width="2"/>
+  <line x1="60" y1="120" x2="140" y2="120" stroke="#888" stroke-width="2"/>
+  <line x1="60" y1="160" x2="140" y2="160" stroke="#888" stroke-width="2"/>
+  <line x1="60" y1="200" x2="140" y2="200" stroke="#888" stroke-width="2"/>
+  <line x1="60" y1="240" x2="140" y2="240" stroke="#888" stroke-width="2"/>
+  
+  <!-- Data nodes (dots along the sides) -->
+  <circle cx="60" cy="40" r="4" fill="#aaa"/>
+  <circle cx="140" cy="80" r="4" fill="#aaa"/>
+  <circle cx="60" cy="120" r="4" fill="#aaa"/>
+  <circle cx="140" cy="160" r="4" fill="#aaa"/>
+  <circle cx="60" cy="200" r="4" fill="#aaa"/>
+  <circle cx="140" cy="240" r="4" fill="#aaa"/>
+</svg>
