@@ -16,6 +16,7 @@
   <meta name="twitter:title" content="HerpForge" />
   <meta name="twitter:description" content="Modern breeding tools. Anywhere." />
   <meta name="twitter:image" content="/og-image-1200x630.jpg" />
+
   <style>
     html {
       background: #1C1C1C;
@@ -55,6 +56,103 @@
     @media (prefers-reduced-motion: reduce) {
       .hf-animate-in {
         animation: none;
+      }
+    }
+
+    /* heavy orange bloom + soft white rim + deep base shadow */
+    .hf-glow {
+      filter:
+        drop-shadow(0 0 10px rgba(228, 87, 46, .85)) drop-shadow(0 0 26px rgba(228, 87, 46, .65)) drop-shadow(0 14px 36px rgba(0, 0, 0, .75)) drop-shadow(0 0 6px rgba(255, 255, 255, .18));
+    }
+
+    html,
+    body {
+      overflow-x: hidden;
+    }
+
+    #front-hero {
+      overflow: hidden;
+      contain: paint;
+    }
+
+    /* constrain + clip the glow stack */
+    .hf-wrap {
+      position: relative;
+      display: inline-block;
+      overflow: hidden;
+      /* clips aura/plate so no horizontal scroll */
+      border-radius: 28px;
+      max-width: min(33vw, 40rem);
+      /* <= hard cap on large screens */
+      width: 100%;
+    }
+
+    /* keep aura big but not affecting layout */
+    .hf-aura {
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+      pointer-events: none;
+      border-radius: 40px;
+      background: radial-gradient(60% 60% at 50% 50%,
+          rgba(228, 87, 46, .42) 0%, rgba(228, 87, 46, .22) 38%, rgba(228, 87, 46, 0) 70%);
+      filter: blur(18px);
+      transform: scale(1.15);
+      will-change: transform;
+    }
+
+    /* optional: ease aura on smaller screens so it never nudges layout */
+    @media (max-width: 1024px) {
+      .hf-wrap {
+        max-width: min(88vw, 28rem);
+      }
+
+      .hf-aura {
+        transform: scale(1.05);
+        filter: blur(12px);
+      }
+    }
+
+    .hf-fly-left,
+    .hf-fly-right {
+      display: inline-block;
+      will-change: transform;
+    }
+
+    @keyframes hfInLeft {
+      from {
+        transform: translateX(-120vw);
+      }
+
+      to {
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes hfInRight {
+      from {
+        transform: translateX(120vw);
+      }
+
+      to {
+        transform: translateX(0);
+      }
+    }
+
+    .hf-fly-left {
+      animation: hfInLeft 800ms ease-out both;
+    }
+
+    .hf-fly-right {
+      animation: hfInRight 800ms ease-out both;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+
+      .hf-fly-left,
+      .hf-fly-right {
+        animation: none !important;
+        transform: none !important;
       }
     }
   </style>
@@ -106,7 +204,7 @@
            rounded-none shadow-[0_8px_24px_rgba(0,0,0,.35)] hf-pre" aria-label="Join the waitlist">
     <span aria-hidden="true" class="inline-block h-5 w-5 bg-white"
       style="-webkit-mask:url('/python-silhouette.svg') no-repeat center / contain; mask:url('/python-silhouette.svg') no-repeat center / contain;"></span>
-    Join the waitlist
+    Join the Waitlist
   </button>
 
   <script type="module" src="/src/main.js"></script>

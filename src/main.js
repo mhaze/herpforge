@@ -9,15 +9,18 @@ document.querySelector('#app').innerHTML = `
     <!-- Gradient Overlay -->
     <div class="absolute inset-0 bg-gradient-to-tr from-[#E4572E]/20 via-transparent to-black"></div>
     
-    <!-- Hero Background SVG -->
-    <div class="absolute inset-0 flex items-center justify-center opacity-10">
-      <img src="/python-silhouette.svg" alt="Python silhouette" 
-           class="max-w-2xl filter drop-shadow-[0_0_25px_rgba(228,87,46,0.7)]" style="max-width: 100% !important; max-height: 420px !important" />
+    <div class="absolute inset-0 z-[2] flex items-center justify-center px-4">
+      <div class="hf-wrap">
+        <div class="hf-aura"></div>
+        <img src="/python-silhouette.svg" alt="Python silhouette" decoding="async" class="mx-auto hf-glow contrast-125 brightness-110 max-w-full lg:max-w-[33vw] h-auto" style="aspect-ratio: 3 / 2;">
+
+      </div>
     </div>
 
     <div class="relative z-10 text-center" data-aos="fade-up" data-aos-duration="800">
-      <h1 class="text-5xl md:text-7xl font-bold tracking-tight text-[#E4572E] drop-shadow-forge">
-        herp<span class="text-white drop-shadow-forgeWhite">Forge</span>
+      <h1 aria-label="herpForge"
+          class="relative inline-block text-5xl md:text-7xl font-extrabold tracking-tight">
+        <span class="hf-fly-left text-[#E4572E] drop-shadow-forge">herp</span><span class="hf-fly-right text-white drop-shadow-forgeWhite">Forge</span>
       </h1>
       <!-- Divider line -->
       <div class="mt-4 mb-6 h-1 w-24 mx-auto bg-gradient-to-r from-transparent via-[#E4572E] to-transparent rounded-full animate-pulse"></div>
@@ -37,7 +40,7 @@ document.querySelector('#app').innerHTML = `
 
   
   <!-- Features Section -->
-  <section class="bg-[#111111] text-gray-300 py-16 px-6">
+  <section class="bg-[#111111] text-gray-300 py-16 px-6" data-lazy>
     <h2 class="text-3xl md:text-4xl font-bold text-center text-white" data-aos="fade-up">Core Features</h2>
     <div class="mt-10 grid gap-10 md:grid-cols-2 lg:grid-cols-4 text-center max-w-6xl mx-auto">
       <div class="transition transform hover:scale-105 duration-500 space-y-2 px-4" data-aos="fade-up" data-aos-delay="100">
@@ -74,7 +77,7 @@ document.querySelector('#app').innerHTML = `
 
   
   <!-- Why herpForge Section -->
-  <section class="bg-[#1C1C1C] text-gray-300 py-16 px-6">
+  <section class="bg-[#1C1C1C] text-gray-300 py-16 px-6" data-lazy>
     <h2 class="text-3xl md:text-4xl font-bold text-center text-white" data-aos="fade-up">Why herpForge?</h2>
     <div class="mt-10 grid gap-10 md:grid-cols-3 text-center max-w-6xl mx-auto">
       <div class="space-y-2 px-4" data-aos="fade-up" data-aos-delay="100">
@@ -103,7 +106,7 @@ document.querySelector('#app').innerHTML = `
 
 
   <!-- Roadmap Section -->
-  <section class="bg-[#111111] text-gray-300 py-16 px-6">
+  <section class="bg-[#111111] text-gray-300 py-16 px-6" data-lazy>
     <h2 class="text-3xl md:text-4xl font-bold text-center text-white" data-aos="fade-up">On the Horizon</h2>
     <ul class="mt-10 max-w-2xl mx-auto space-y-8 text-center">
       <li class="flex flex-col items-center space-y-2" data-aos="fade-up" data-aos-delay="100">
@@ -127,7 +130,7 @@ document.querySelector('#app').innerHTML = `
 
   <!-- Footer -->
   <footer class="bg-[#1C1C1C] text-gray-500 py-6 text-center text-sm flex flex-col items-center space-y-2">
-    <p>@copy; 2025 herpForge. Built for breeders, by breeders.</p>
+    <p>&copy; 2025 herpForge. Built for breeders, by breeders.</p>
     <p class="text-xs text-gray-600">v1.6.10</p>
   </footer>
 `
@@ -164,7 +167,7 @@ if (stickyFull) {
   setTimeout(() => {
     stickyFull.classList.remove('hf-pre');
     stickyFull.classList.add('hf-animate-in');
-  }, 2000);
+  }, 600);
 }
 document.addEventListener('DOMContentLoaded', () => {
   function openModal(id) { const m = document.getElementById(id); if (!m) return; m.classList.remove('hidden'); m.setAttribute('aria-hidden', 'false'); document.body.classList.add('overflow-hidden'); setTimeout(() => { (m.querySelector('input,select,textarea,button,[href],[tabindex]:not([tabindex="-1"])') || m).focus(); }, 0); }

@@ -1,7 +1,8 @@
-import { defineConfig } from 'vite'
+// vite.config.js
+import { defineConfig } from 'vite';
+import { createHtmlPlugin } from 'vite-plugin-html';
 
-export default defineConfig({
-  server: {
-    port: 5173
-  }
-})
+export default defineConfig(({ mode }) => ({
+  plugins: mode === 'production' ? [createHtmlPlugin({ minify: true })] : [],
+  server: { port: 5173 },
+}));
