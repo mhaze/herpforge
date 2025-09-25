@@ -1,4 +1,6 @@
-
+.overflow-hidden {
+  padding-right: var(--scrollbar, 0px);
+}
 /* Hero background utility */
 .bg-hero-snake { background-image: url('/python-silhouette.svg'); }
 
@@ -40,3 +42,5 @@ section.relative.min-h-screen.flex.flex-col.items-center.justify-center.px-6.bg-
   pointer-events: none;
   /* so it doesn't block interactions */
 }
+
+

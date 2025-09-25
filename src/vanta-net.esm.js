@@ -8,7 +8,6 @@
 // - Same settings you provided; HMR-safe for Vite
 
 const VANTA_SETTINGS = {
-  el: "#front-hero",
   mouseControls: true,
   touchControls: true,
   gyroControls: false,
@@ -17,10 +16,7 @@ const VANTA_SETTINGS = {
   scale: 1.00,
   scaleMobile: 1.00,
   color: 0xff2d00,
-  backgroundColor: 0x0,
-  points: 12,
-  maxDistance: 20.0,
-  spacing: 15.0,
+  backgroundColor: 0x0
 };
 
 function loadScript(src) {

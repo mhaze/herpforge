@@ -16,13 +16,131 @@
   <meta name="twitter:title" content="HerpForge" />
   <meta name="twitter:description" content="Modern breeding tools. Anywhere." />
   <meta name="twitter:image" content="/og-image-1200x630.jpg" />
+  <style>
+    html {
+      background: #1C1C1C;
+    }
 
+    body {
+      background: #1C1C1C;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    /* pre-state: off-screen ABOVE */
+    .hf-pre {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+
+    /* slide down from the top */
+    @keyframes hfSlideDown {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .hf-animate-in {
+      animation: hfSlideDown 420ms ease-out both;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .hf-animate-in {
+        animation: none;
+      }
+    }
+  </style>
   <link rel="manifest" href="/manifest.json">
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2EKHH2BEN2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-2EKHH2BEN2');
+</script>
 
 <body class="bg-gradient-to-b from-[#1C1C1C] to-black text-white">
   <div id="app"></div>
+
+  <div id="signupModal" class="fixed inset-0 z-[100] hidden" aria-hidden="true" role="dialog" aria-modal="true"
+    aria-labelledby="signupTitle" tabindex="-1">
+    <div class="absolute inset-0 bg-black/70" data-backdrop></div>
+    <div class="relative mx-auto mt-20 w-[92%] max-w-lg rounded-2xl bg-[#111] p-6 text-white shadow-2xl">
+      <div class="flex items-start justify-between">
+        <h3 id="signupTitle" class="text-xl font-semibold">Get launch updates</h3>
+        <button type="button" data-close class="ml-4 -mr-2 rounded-lg p-2 text-white/70 hover:text-white"
+          aria-label="Close">✕</button>
+      </div>
+      <div id="mc_embed_signup" class="mt-4">
+        <form
+          action="https://herpforge.us18.list-manage.com/subscribe/post?u=2d8a29ee32ba9a7bfbd178fa0&amp;id=65b13d5a63&amp;f_id=00feabe6f0"
+          method="post" id="mc-embedded-subscribe-form" target="_blank" novalidate>
+          <label for="mce-EMAIL" class="block text-sm font-medium text-white/80">Email Address <span
+              class="text-[#E4572E]">*</span></label>
+          <input type="email" name="EMAIL" id="mce-EMAIL" required
+            class="mt-2 w-full rounded-xl border border-white/20 bg-[#0f1115] p-3 text-white placeholder-white/40"
+            placeholder="you@example.com" autocomplete="email">
+          <div aria-hidden="true" style="position:absolute; left:-5000px;"><input type="text"
+              name="b_2d8a29ee32ba9a7bfbd178fa0_65b13d5a63" tabindex="-1" value=""></div>
+          <input type="submit" id="mc-embedded-subscribe"
+            class="mt-4 rounded-2xl bg-[#E4572E] px-4 py-2 font-semibold text-white" value="Notify me">
+        </form>
+      </div>
+      <p class="mt-3 text-xs text-white/60">No spam. Unsubscribe anytime.</p>
+    </div>
+  </div>
+  <button id="stickyCtaFull" data-sticky data-open="signupModal" type="button" class="fixed inset-x-0 top-[env(safe-area-inset-top)] z-[9999]
+           w-full px-6 py-4 flex items-center justify-center gap-2
+           bg-[#E4572E] text-white font-semibold tracking-wide
+           rounded-none shadow-[0_8px_24px_rgba(0,0,0,.35)] hf-pre" aria-label="Join the waitlist">
+    <span aria-hidden="true" class="inline-block h-5 w-5 bg-white"
+      style="-webkit-mask:url('/python-silhouette.svg') no-repeat center / contain; mask:url('/python-silhouette.svg') no-repeat center / contain;"></span>
+    Join the waitlist
+  </button>
+
   <script type="module" src="/src/main.js"></script>
+  <div id="signupModal" class="fixed inset-0 z-[100] hidden" aria-hidden="true" role="dialog" aria-modal="true"
+    aria-labelledby="signupTitle" tabindex="-1">
+    <div class="absolute inset-0 bg-black/70" data-backdrop></div>
+    <div class="relative mx-auto mt-20 w-[92%] max-w-lg rounded-2xl bg-[#111] p-6 text-white shadow-2xl">
+      <div class="flex items-start justify-between">
+        <h3 id="signupTitle" class="text-xl font-semibold">Get launch updates</h3>
+        <button type="button" data-close class="ml-4 -mr-2 rounded-lg p-2 text-white/70 hover:text-white"
+          aria-label="Close">✕</button>
+      </div>
+
+      <div id="mc_embed_signup" class="mt-4">
+        <form
+          action="https://herpforge.us18.list-manage.com/subscribe/post?u=2d8a29ee32ba9a7bfbd178fa0&amp;id=65b13d5a63&amp;f_id=00feabe6f0"
+          method="post" id="mc-embedded-subscribe-form" target="_blank" novalidate>
+          <label for="mce-EMAIL" class="block text-sm font-medium text-white/80">Email Address <span
+              class="text-[#E4572E]">*</span></label>
+          <input type="email" name="EMAIL" id="mce-EMAIL" required
+            class="mt-2 w-full rounded-xl border border-white/20 bg-[#0f1115] p-3 text-white placeholder-white/40"
+            placeholder="you@example.com" autocomplete="email">
+          <div aria-hidden="true" style="position:absolute; left:-5000px;">
+            <input type="text" name="b_2d8a29ee32ba9a7bfbd178fa0_65b13d5a63" tabindex="-1" value="">
+          </div>
+          <input type="submit" id="mc-embedded-subscribe"
+            class="mt-4 rounded-2xl bg-[#E4572E] px-4 py-2 font-semibold text-white" value="Notify me">
+        </form>
+      </div>
+
+      <p class="mt-3 text-xs text-white/60">No spam. Unsubscribe anytime.</p>
+    </div>
+  </div>
+
 </body>
 
 </html>

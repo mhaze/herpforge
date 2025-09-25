@@ -5,17 +5,15 @@ import 'aos/dist/aos.css'
 
 document.querySelector('#app').innerHTML = `
   <!-- Hero -->
-  <section class="relative flex flex-col items-center justify-center min-h-screen px-6 p-4 bg-[#1C1C1C]">
-        
+  <section class="relative min-h-screen flex flex-col items-center justify-center px-6 bg-[#1C1C1C]">
+    <!-- Gradient Overlay -->
+    <div class="absolute inset-0 bg-gradient-to-tr from-[#E4572E]/20 via-transparent to-black"></div>
+    
     <!-- Hero Background SVG -->
-    <div id="front-hero" class="absolute inset-0 flex items-center justify-center opacity-20">
+    <div class="absolute inset-0 flex items-center justify-center opacity-10">
       <img src="/python-silhouette.svg" alt="Python silhouette" 
            class="max-w-2xl filter drop-shadow-[0_0_25px_rgba(228,87,46,0.7)]" style="max-width: 100% !important; max-height: 420px !important" />
     </div>
-
-    <!-- Gradient Overlay -->
-    <div class="absolute inset-0 bg-gradient-to-tr from-[#E4572E]/20 via-transparent to-black"></div>
-
 
     <div class="relative z-10 text-center" data-aos="fade-up" data-aos-duration="800">
       <h1 class="text-5xl md:text-7xl font-bold tracking-tight text-[#E4572E] drop-shadow-forge">
@@ -129,7 +127,7 @@ document.querySelector('#app').innerHTML = `
 
   <!-- Footer -->
   <footer class="bg-[#1C1C1C] text-gray-500 py-6 text-center text-sm flex flex-col items-center space-y-2">
-    <p>© 2025 herpForge. Built for breeders, by breeders.</p>
+    <p>@copy; 2025 herpForge. Built for breeders, by breeders.</p>
     <p class="text-xs text-gray-600">v1.6.10</p>
   </footer>
 `
@@ -161,4 +159,18 @@ window.addEventListener("DOMContentLoaded", () => {
   AOS.init()
 })
 
-import './vanta-net.esm.js'
+const stickyFull = document.getElementById('stickyCtaFull');
+if (stickyFull) {
+  setTimeout(() => {
+    stickyFull.classList.remove('hf-pre');
+    stickyFull.classList.add('hf-animate-in');
+  }, 2000);
+}
+document.addEventListener('DOMContentLoaded', () => {
+  function openModal(id) { const m = document.getElementById(id); if (!m) return; m.classList.remove('hidden'); m.setAttribute('aria-hidden', 'false'); document.body.classList.add('overflow-hidden'); setTimeout(() => { (m.querySelector('input,select,textarea,button,[href],[tabindex]:not([tabindex="-1"])') || m).focus(); }, 0); }
+  function closeModal(node) { const m = node.closest('.fixed.inset-0') || document.getElementById('signupModal'); if (!m) return; m.classList.add('hidden'); m.setAttribute('aria-hidden', 'true'); document.body.classList.remove('overflow-hidden'); }
+  window.hfOpenModal = openModal;
+  document.addEventListener('click', (e) => { const t = e.target.closest('[data-open]'); if (t) { e.preventDefault(); openModal(t.getAttribute('data-open')); return; } if (e.target.closest('[data-close]') || e.target.hasAttribute('data-backdrop')) { e.preventDefault(); closeModal(e.target); } });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') { const m = document.getElementById('signupModal'); if (m && !m.classList.contains('hidden')) closeModal(m); } });
+});
+
