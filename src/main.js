@@ -35,92 +35,100 @@ document.querySelector('#app').innerHTML = `
     </div>
   </section>
 
+  
   <!-- Features Section -->
   <section class="bg-[#111111] text-gray-300 py-16 px-6">
     <h2 class="text-3xl md:text-4xl font-bold text-center text-white" data-aos="fade-up">Core Features</h2>
-    <div class="mt-10 grid gap-10 md:grid-cols-2 lg:grid-cols-4 text-center">
-      <div class="transition transform hover:scale-105 duration-500" data-aos="fade-up" data-aos-delay="100">
+    <div class="mt-10 grid gap-10 md:grid-cols-2 lg:grid-cols-4 text-center max-w-6xl mx-auto">
+      <div class="transition transform hover:scale-105 duration-500 space-y-2 px-4" data-aos="fade-up" data-aos-delay="100">
         <div class="flex justify-center mb-4">
           <i data-lucide="rows" class="w-12 h-12"></i>
         </div>
-        <h3 class="text-xl font-semibold text-white">Collection Management</h3>
-        <p class="mt-2 text-gray-400">Keep every detail organized — feedings, sheds, weights, and notes, all in one place.</p>
+        <h3 class="text-lg md:text-xl font-semibold text-white">Collection Management</h3>
+        <p class="text-sm md:text-base text-gray-400 max-w-md mx-auto">Keep every detail organized — feedings, sheds, weights, and notes, all in one place.</p>
       </div>
-      <div class="transition transform hover:scale-105 duration-500" data-aos="fade-up" data-aos-delay="200">
+      <div class="transition transform hover:scale-105 duration-500 space-y-2 px-4" data-aos="fade-up" data-aos-delay="200">
         <div class="flex justify-center mb-4">
           <i data-lucide="dna" class="w-12 h-12"></i>
         </div>
-        <h3 class="text-xl font-semibold text-white">Genetics Insights</h3>
-        <p class="mt-2 text-gray-400">Pair smarter. Forecast odds, outcomes, and ROI with breeder-grade precision.</p>
+        <h3 class="text-lg md:text-xl font-semibold text-white">Genetics Insights</h3>
+        <p class="text-sm md:text-base text-gray-400 max-w-md mx-auto">Pair smarter. Forecast odds, outcomes, and ROI with breeder-grade precision.</p>
       </div>
-      <div class="transition transform hover:scale-105 duration-500" data-aos="fade-up" data-aos-delay="300">
+      <div class="transition transform hover:scale-105 duration-500 space-y-2 px-4" data-aos="fade-up" data-aos-delay="300">
         <div class="flex justify-center mb-4">
           <i data-lucide="infinity" class="w-12 h-12"></i>
         </div>
-        <h3 class="text-xl font-semibold text-white">Showcase Profiles</h3>
-        <p class="mt-2 text-gray-400">Share polished, mobile-ready animal pages — with direct links to your storefront or sales platform.</p>
+        <h3 class="text-lg md:text-xl font-semibold text-white">Showcase Profiles</h3>
+        <p class="text-sm md:text-base text-gray-400 max-w-md mx-auto">Share polished, mobile-ready animal pages — with direct links to your storefront or sales platform.</p>
       </div>
-      <div class="transition transform hover:scale-105 duration-500" data-aos="fade-up" data-aos-delay="400">
+      <div class="transition transform hover:scale-105 duration-500 space-y-2 px-4" data-aos="fade-up" data-aos-delay="400">
         <div class="flex justify-center mb-4">
           <i data-lucide="smartphone" class="w-12 h-12"></i>
         </div>
-        <h3 class="text-xl font-semibold text-white">Anywhere Access</h3>
-        <p class="mt-2 text-gray-400">Manage your collection at the rack, at a show, or on the road — from any device.</p>
+        <h3 class="text-lg md:text-xl font-semibold text-white">Anywhere Access</h3>
+        <p class="text-sm md:text-base text-gray-400 max-w-md mx-auto">Manage your collection at the rack, at a show, or on the road — from any device.</p>
       </div>
     </div>
   </section>
 
+
+  
   <!-- Why herpForge Section -->
   <section class="bg-[#1C1C1C] text-gray-300 py-16 px-6">
     <h2 class="text-3xl md:text-4xl font-bold text-center text-white" data-aos="fade-up">Why herpForge?</h2>
-    <div class="mt-10 grid gap-10 md:grid-cols-3 text-center">
-      <div data-aos="fade-up" data-aos-delay="100">
+    <div class="mt-10 grid gap-10 md:grid-cols-3 text-center max-w-6xl mx-auto">
+      <div class="space-y-2 px-4" data-aos="fade-up" data-aos-delay="100">
         <div class="flex justify-center mb-4">
           <i data-lucide="target" class="w-12 h-12"></i>
         </div>
-        <h3 class="text-xl font-semibold text-white">Purpose-Built</h3>
-        <p class="mt-2 text-gray-400">Designed specifically for reptile keepers and breeders.</p>
+        <h3 class="text-lg md:text-xl font-semibold text-white">Purpose-Built</h3>
+        <p class="text-sm md:text-base text-gray-400 max-w-md mx-auto">Designed specifically for reptile keepers and breeders.</p>
       </div>
-      <div data-aos="fade-up" data-aos-delay="200">
+      <div class="space-y-2 px-4" data-aos="fade-up" data-aos-delay="200">
         <div class="flex justify-center mb-4">
           <i data-lucide="bar-chart-3" class="w-12 h-12"></i>
         </div>
-        <h3 class="text-xl font-semibold text-white">Data You Can Use</h3>
-        <p class="mt-2 text-gray-400">Turn logs into insights that guide your pairings and planning.</p>
+        <h3 class="text-lg md:text-xl font-semibold text-white">Data You Can Use</h3>
+        <p class="text-sm md:text-base text-gray-400 max-w-md mx-auto">Turn logs into insights that guide your pairings and planning.</p>
       </div>
-      <div data-aos="fade-up" data-aos-delay="300">
+      <div class="space-y-2 px-4" data-aos="fade-up" data-aos-delay="300">
         <div class="flex justify-center mb-4">
           <i data-lucide="globe" class="w-12 h-12"></i>
         </div>
-        <h3 class="text-xl font-semibold text-white">Accessible Anywhere</h3>
-        <p class="mt-2 text-gray-400">Manage your collection from rack-side, shows, or the field.</p>
+        <h3 class="text-lg md:text-xl font-semibold text-white">Accessible Anywhere</h3>
+        <p class="text-sm md:text-base text-gray-400 max-w-md mx-auto">Manage your collection from rack-side, shows, or the field.</p>
       </div>
     </div>
   </section>
+
 
   <!-- Roadmap Section -->
   <section class="bg-[#111111] text-gray-300 py-16 px-6">
     <h2 class="text-3xl md:text-4xl font-bold text-center text-white" data-aos="fade-up">On the Horizon</h2>
-    <ul class="mt-8 max-w-2xl mx-auto space-y-8 text-center">
+    <ul class="mt-10 max-w-2xl mx-auto space-y-8 text-center">
       <li class="flex flex-col items-center space-y-2" data-aos="fade-up" data-aos-delay="100">
         <i data-lucide="shopping-cart" class="w-8 h-8 text-[#E4572E] transition-transform transform hover:scale-110 hover:drop-shadow-forge"></i>
-        <span>Marketplace integrations (MorphMarket, Shopify, and more)</span>
+        <h3 class="text-lg md:text-xl font-semibold text-white">Marketplace Integrations</h3>
+        <p class="text-sm md:text-base text-gray-400 max-w-md mx-auto">MorphMarket, Shopify, and more</p>
       </li>
       <li class="flex flex-col items-center space-y-2" data-aos="fade-up" data-aos-delay="200">
         <i data-lucide="users" class="w-8 h-8 text-[#E4572E] transition-transform transform hover:scale-110 hover:drop-shadow-forge"></i>
-        <span>Multi-collection & team support</span>
+        <h3 class="text-lg md:text-xl font-semibold text-white">Multi-Collection & Team Support</h3>
+        <p class="text-sm md:text-base text-gray-400 max-w-md mx-auto">Collaborate with others and manage multiple collections</p>
       </li>
       <li class="flex flex-col items-center space-y-2" data-aos="fade-up" data-aos-delay="300">
         <i data-lucide="file-text" class="w-8 h-8 text-[#E4572E] transition-transform transform hover:scale-110 hover:drop-shadow-forge"></i>
-        <span>Export to professional printable records</span>
+        <h3 class="text-lg md:text-xl font-semibold text-white">Export to Records</h3>
+        <p class="text-sm md:text-base text-gray-400 max-w-md mx-auto">Generate professional printable logs and records</p>
       </li>
     </ul>
   </section>
 
+
   <!-- Footer -->
   <footer class="bg-[#1C1C1C] text-gray-500 py-6 text-center text-sm flex flex-col items-center space-y-2">
     <p>© 2025 herpForge. Built for breeders, by breeders.</p>
-    <p class="text-xs text-gray-600">v1.6.2</p>
+    <p class="text-xs text-gray-600">v1.6.5</p>
   </footer>
 `
 

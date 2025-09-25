@@ -1,5 +1,36 @@
 # herpForge Version History
 
+## v1.6.5 (update 2) — 2025-09-24
+- Added PWA manifest.json with favicon definitions (64, 180, 192, 512 px)
+- Linked manifest.json in index.html for automatic device icon detection
+# herpForge Version History
+
+## v1.6.5 (update) — 2025-09-24
+- Added larger favicon sizes: 64x64, 180x180 (iOS), 192x192, 512x512 (Android/PWA)
+# herpForge Version History
+
+## v1.6.5 — 2025-09-24
+- Hero area typography polished (headline, subtext, gradient overlay)
+- Added favicon: orange python silhouette on black (32x32 PNG + ICO)
+- Footer version updated to v1.6.5
+
+# herpForge Version History
+
+## v1.6.4 — 2025-09-24
+- Core Features typography and spacing polished for consistency
+- Why herpForge typography and spacing polished
+- Ensured all sections collapse cleanly on mobile (no horizontal scroll)
+- Footer version updated to v1.6.4
+
+# herpForge Version History
+
+## v1.6.3 — 2025-09-24
+- Roadmap typography refined: larger titles, smaller descriptions, max-width text blocks
+- Improved spacing between items for a tighter, professional look
+- Footer version updated to v1.6.3
+
+# herpForge Version History
+
 ## v1.6.2 — 2025-09-24
 - Added glowing python silhouette SVG behind hero text
 - Slightly lightened overall feel of hero to reduce dark void look
