@@ -10,3 +10,33 @@
 section.relative.min-h-screen.flex.flex-col.items-center.justify-center.px-6.bg-\[\#1C1C1C\] > div.absolute.inset-0.flex.items-center.justify-center.opacity-10 > img {
   max-width: 100% !important;
 }
+
+/* Make the hero a stacking context and layer things explicitly */
+#front-hero {
+  position: relative;
+}
+
+/* Ensure the Vanta canvas sits at the back, full strength */
+#front-hero canvas {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  opacity: 1 !important;
+}
+
+/* Ensure your hero content is above the canvas */
+#front-hero>*:not(canvas) {
+  position: relative;
+  z-index: 1;
+}
+
+/* If you have an overlay, keep it subtle or move it behind content */
+#front-hero .hero-overlay {
+  /* example class if you use one */
+  z-index: 1;
+  /* keep above canvas, below text if needed */
+  opacity: 1;
+  /* lower alpha if it’s dulling the Vanta */
+  pointer-events: none;
+  /* so it doesn't block interactions */
+}
