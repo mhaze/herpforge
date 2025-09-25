@@ -12,7 +12,7 @@ document.querySelector('#app').innerHTML = `
     <!-- Hero Background SVG -->
     <div class="absolute inset-0 flex items-center justify-center opacity-10">
       <img src="/python-silhouette.svg" alt="Python silhouette" 
-           class="max-w-2xl filter drop-shadow-[0_0_25px_rgba(228,87,46,0.7)]" />
+           class="max-w-2xl filter drop-shadow-[0_0_25px_rgba(228,87,46,0.7)]" style="max-width: 100% !important; max-height: 420px !important" />
     </div>
 
     <div class="relative z-10 text-center" data-aos="fade-up" data-aos-duration="800">
@@ -128,7 +128,7 @@ document.querySelector('#app').innerHTML = `
   <!-- Footer -->
   <footer class="bg-[#1C1C1C] text-gray-500 py-6 text-center text-sm flex flex-col items-center space-y-2">
     <p>© 2025 herpForge. Built for breeders, by breeders.</p>
-    <p class="text-xs text-gray-600">v1.6.5</p>
+    <p class="text-xs text-gray-600">v1.6.10</p>
   </footer>
 `
 

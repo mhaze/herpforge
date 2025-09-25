@@ -1,5 +1,56 @@
 # herpForge Version History
 
+## v1.6.12 — 2025-09-24
+- Hero python image updated with inline style: max-width: 100% !important;
+- Ensures background image scales responsively without layout breakage
+- Footer version updated to v1.6.12
+
+# herpForge Version History
+
+## v1.6.11 — 2025-09-24
+- Added CSS override hack to force hero background image to max-width: 100%
+- Ensures background python image scales responsively without breaking layout
+- Footer version updated to v1.6.11
+
+# herpForge Version History
+
+## v1.6.10 — 2025-09-24
+- Hero content width loosened with responsive classes (sm:max-w-3xl, lg:max-w-5xl)
+- Prevents overly narrow hero text block vs full background
+- Footer version updated to v1.6.10
+
+# herpForge Version History
+
+## v1.6.9 — 2025-09-24
+- Hero python background now uses bg-cover directly on section
+- No absolute positioning hacks, clean responsive layout
+- Added .bg-hero-snake-cover utility class in CSS
+- Footer version updated to v1.6.9
+
+# herpForge Version History
+
+## v1.6.8 — 2025-09-24
+- Hero background now uses CSS class `bg-hero-snake` with background-image
+- Ensures Tailwind doesn't purge background, fully responsive with bg-contain
+- Added min-h-[60vh] for consistent layout across devices
+- Footer version updated to v1.6.8
+
+# herpForge Version History
+
+## v1.6.7 — 2025-09-24
+- Hero python background now uses CSS background-image (responsive with bg-contain)
+- Removed <img> element to prevent layout breakage
+- Footer version updated to v1.6.7
+
+# herpForge Version History
+
+## v1.6.6 — 2025-09-24
+- Fixed hero background python SVG to be responsive (scales without breaking layout)
+- Added gradient overlay and opacity handling for balance
+- Footer version updated to v1.6.6
+
+# herpForge Version History
+
 ## v1.6.5 (update 2) — 2025-09-24
 - Added PWA manifest.json with favicon definitions (64, 180, 192, 512 px)
 - Linked manifest.json in index.html for automatic device icon detection

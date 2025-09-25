@@ -1,0 +1,12 @@
+
+/* Hero background utility */
+.bg-hero-snake { background-image: url('/python-silhouette.svg'); }
+
+/* Hero background utility */
+.bg-hero-snake-cover { background-image: url('/python-silhouette.svg'); background-blend-mode: overlay; }
+
+
+/* Hack fix for hero background responsiveness */
+section.relative.min-h-screen.flex.flex-col.items-center.justify-center.px-6.bg-\[\#1C1C1C\] > div.absolute.inset-0.flex.items-center.justify-center.opacity-10 > img {
+  max-width: 100% !important;
+}
